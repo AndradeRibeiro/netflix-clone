@@ -1,6 +1,6 @@
-<nav class="navbar navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-dark bg-dark fixed-top" [ngClass]="{'sidebar-open': opened}">
 
-    <button class="navbar-toggler d-lg-none" type="button">
+    <button class="navbar-toggler d-lg-none" type="button" (click)="toggle()">
         <img src="assets/images/hamburger.gif" alt="Menu">
     </button>
   
@@ -16,7 +16,7 @@
             <a class="nav-link text-reset" href="#">Infantil</a>
         </li>
         <li class="nav-item d-none d-xl-flex">
-            <a class="nav-link active text-reset" href="#">Inicío</a>
+            <a class="nav-link active text-reset" href="#">Início</a>
         </li>
         <li class="nav-item d-none d-xl-flex">
             <a class="nav-link text-reset" href="#">Séries</a>
@@ -37,22 +37,20 @@
     </form>
   
     <div class="media text-white p-2 d-none d-lg-flex">
-        <img src="assets/images/avatar.jpg" alt="Avatar" class="mr-2">
         <div class="media-body">
-            <p class="h6 m-0 text-uppercase">Djalma Sindeaux</p>
+            <p class="h6 m-0 text-uppercase">Ester Ribeiro</p>
         </div>
     </div>
   
     <ul class="list-unstyled font-weight-bold sidebar">
         <li class="media media-avatar">
-            <img src="assets/images/avatar.jpg" alt="Avatar" class="mr-2">
             <div class="media-body">
-                <p class="h6 m-0">DJALMA SINDEAUX</p>
+                <p class="h6 m-0">Ester Ribeiro</p>
                 <small>Trocar de perfil</small>
             </div>
         </li>
         <li class="divider"></li>
-        <li><a href="#" class="text-reset">Inicio</a></li>
+        <li><a href="#" class="text-reset">Início</a></li>
         <li><a href="#" class="text-reset">Minha lista</a></li>
         <li><a href="#" class="text-reset">Séries de ação e aventura</a></li>
         <li><a href="#" class="text-reset">Ação e aventura</a></li>
