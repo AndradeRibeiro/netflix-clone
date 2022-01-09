@@ -27,7 +27,6 @@
     background-color: #1B1B1B!important;
     position: absolute;
     top: 60px;
-    left: -250px;
     height: calc(100vh - 60px);
     overflow-y: auto;
     transition: all 0.1s ease-out;
@@ -35,7 +34,7 @@
 }
 
 .navbar.sidebar-open ul {
-    left: 0;
+    right: 10px;
     opacity: 1;
 }
 
@@ -57,6 +56,14 @@
 
 .media-avatar img {
     height: 38px;
+}
+
+.search-field {
+    max-width: 280px !important;
+}
+
+.btn-user {
+    color: red;
 }
 
 @media (min-width: 576px) {

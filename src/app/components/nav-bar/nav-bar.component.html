@@ -1,9 +1,5 @@
 <nav class="navbar navbar-dark bg-dark fixed-top" [ngClass]="{'sidebar-open': opened}">
 
-    <button class="navbar-toggler d-lg-none" type="button" (click)="toggle()">
-        <img src="assets/images/hamburger.gif" alt="Menu">
-    </button>
-  
     <a class="navbar-brand flex-grow-1" href="#">
         <img src="assets/images/logo.png" class="my-1 mx-2" alt="Netflix">
     </a>
@@ -32,17 +28,17 @@
         </li>
     </ul>
   
-    <form class="form-inline">
-        <input class="form-control" type="search" placeholder="Busca">
+    <form class="form-inline d-none d-xl-flex">
+        <input class="form-control search-field" type="search" placeholder="Buscar">
     </form>
   
-    <div class="media text-white p-2 d-none d-lg-flex">
-        <div class="media-body">
-            <p class="h6 m-0 text-uppercase">Ester Ribeiro</p>
-        </div>
+    <div class="media text-white p-2 d-lg-flex">
+        <button type="button" class="btn btn-user" (click)="toggle()">
+            <i class="material-icons">account_circle</i>
+        </button>
     </div>
   
-    <ul class="list-unstyled font-weight-bold sidebar">
+    <ul class="list-unstyled font-weight-bold sidebar" *ngIf="opened">
         <li class="media media-avatar">
             <div class="media-body">
                 <p class="h6 m-0">Ester Ribeiro</p>

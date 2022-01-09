@@ -2,10 +2,13 @@
     position: relative;
     margin-right: 10px;
     border-radius: 3%;
+    width: 345px;
+    height: 215px;
 }
 
 .title-item img {
     width: 100%;
+    height: 100%;
     border-radius: 3%;
 }
 
@@ -53,17 +56,6 @@
     margin: 5px auto;
 }
 
-.title-item .btn {
-    background: none;
-    border: #fff 2px solid;
-    border-radius: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 32px;
-    height: 32px;
-}
-
 .title-item .btn i {
     line-height: 16px;
     color: white;
@@ -72,6 +64,12 @@
 .title-item .btn-muted {
     position: absolute;
     right: 10px !important;
+    bottom: 10px !important;
+}
+
+.title-item .btn-play {
+    position: absolute;
+    right: 50px !important;
     bottom: 10px !important;
 }
 
@@ -154,3 +152,4 @@
 .parts {
     font-weight: bold;
 }
+
